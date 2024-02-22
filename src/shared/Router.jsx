@@ -21,8 +21,7 @@ export default function RouterPage() {
     <Router>
       <Routes>
         {/* 로그인 여부 상관없는 라우터 */}
-        <Route element={<Layout />}>
-          <Route path='/' />
+        <Route path='/' element={<Layout />}>
           <Route path='/search' element={<SearchPage />} />
           <Route path='/testPage' element={<TestPage />} />
         </Route>

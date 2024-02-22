@@ -7,7 +7,7 @@ const Navigation = () => {
   const accessToken = localStorage.getItem("accessToken");
 
   const handleLoginButtonClick = () => {
-    navigate("login");
+    navigate("/login");
   };
   const handleLogoutButtonClick = () => {
     if (!accessToken) {
@@ -52,7 +52,6 @@ const Navigation = () => {
         {/* 로그인이 반드시 필요한 메뉴 */}
         <p>❗️ 로그인이 반드시 필요한 메뉴</p>
         <li>
-          {/* <Link to={accessToken ? `/user/users?userId=1` : "login"}> */}
           <Link to={`/user/users?userId=1`}>1번 유저의 정보</Link>
         </li>
         <li>
