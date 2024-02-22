@@ -30,7 +30,7 @@ function SearchPage() {
       <button onClick={() => updateSearch("1")}>1번유저의 글 보기</button>
       <button onClick={() => updateSearch("2")}>2번유저의 글 보기</button>
 
-      {filteredPosts.map((post) => (
+      {filteredPosts?.map((post) => (
         <div key={post.id}>
           <h2>{post.title}</h2>
           <p>{post.author}</p>
